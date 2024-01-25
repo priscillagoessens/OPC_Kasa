@@ -1,0 +1,20 @@
+.header-container{
+    &_elements{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 45px 100px;
+        &-img{
+            width: 210.322px;
+            height: 68px;
+        }
+        &_nav{
+            display: flex;
+            gap: 57px;
+            &-link{
+                color:black;
+            }
+        }
+    }
+}
