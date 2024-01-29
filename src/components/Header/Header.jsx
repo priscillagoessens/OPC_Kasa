@@ -1,6 +1,6 @@
-import logo from '../assets/picto/Logo-red.svg'
+import logo from '../../assets/picto/Logo-red.svg'
 import { Link } from 'react-router-dom'
-import '../styles/_header.scss'
+import './_header.scss'
 
 function Header() {
   return (
@@ -17,7 +17,3 @@ function Header() {
 }
 
 export default Header
-
-// export default function Header(){
-
-// }

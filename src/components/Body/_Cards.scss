@@ -1,0 +1,30 @@
+.cards-container{
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+    &_item{
+        display: flex;
+        position: relative;
+        align-items: end;
+        height: 340px;
+        width: 340px;
+        list-style: none;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+        &_img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        &_title{
+            position: absolute;
+            color: #FFF;
+            padding: 20px;
+        }
+    }
+}

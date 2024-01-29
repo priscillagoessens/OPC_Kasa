@@ -1,5 +1,5 @@
-import '../styles/_footer.scss'
-import logo from '../assets/picto/Logo-light.png'
+import './_footer.scss'
+import logo from '../../assets/picto/Logo-light.png'
 
 export default function Footer() {
   return (

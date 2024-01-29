@@ -1,0 +1,25 @@
+.banner-section{
+    display: flex;
+    justify-content: center;
+    &_container{
+        margin: 0 45px;
+        width: 1240px;
+        height: 223px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            filter: brightness(50%);
+            position: relative;
+        }
+        &_title{
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            position: absolute;
+        }
+    }
+}
