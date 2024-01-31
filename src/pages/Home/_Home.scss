@@ -1,0 +1,7 @@
+@import "../../styles/breakpoint.scss";
+.main-section{
+    margin: 0 100px;
+    @include mobile{
+        margin: 0 20px;
+    }
+}

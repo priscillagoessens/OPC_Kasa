@@ -1,11 +1,11 @@
+@import '../../styles/breakpoint';
 .cards-container{
-    align-items: center;
-    border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
     padding: 30px;
+    column-gap: 60px;
+    row-gap: 30px;
     &_item{
         display: flex;
         position: relative;
@@ -15,6 +15,10 @@
         list-style: none;
         border-radius: 10px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+        @include mobile{
+            width: 335px;
+            height: 255px;
+        }
         &_img{
             object-fit: cover;
             width: 100%;
@@ -25,6 +29,9 @@
             position: absolute;
             color: #FFF;
             padding: 20px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
         }
     }
 }

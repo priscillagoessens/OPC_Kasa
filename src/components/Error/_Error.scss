@@ -1,0 +1,38 @@
+@import '../../styles/breakpoint';
+
+.error-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 113px 20px;
+    gap: 113px;
+    h2{
+        color: #FF6060;
+        text-align: center;
+        font-family: Montserrat-bold;
+        font-size: 288px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.6%;
+        margin:0;
+        @include mobile{
+            font-size: 96px;
+        }
+    }
+    h3{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        color: #FF6060;
+        text-align: center;
+        margin:0;
+    }
+    &_link{
+        text-decoration-line: underline;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        color:black
+    }
+}

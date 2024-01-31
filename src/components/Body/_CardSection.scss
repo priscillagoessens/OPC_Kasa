@@ -1,10 +1,15 @@
+@import '../../styles/breakpoint';
+
 .cards-section{
-    margin: 50px 100px;
+    margin: 50px 0px;
     &_container{
         border-radius: 25px;
         background: #F6F6F6;
         justify-content: center;
-    align-items: center;
-    display: flex;
+        align-items: center;
+        display: flex;
+        @include mobile{
+            background: none;
+        }
     }
 }

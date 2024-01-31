@@ -1,11 +1,14 @@
+@import "./styles/breakpoint.scss";
 @font-face { font-family: Montserrat; 
   src: url('../src/assets/fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Montserrat-bold; 
+  src: url('../src/assets/fonts/Montserrat-Bold.ttf'); } 
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: Montserrat;
   text-decoration: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 }
 

@@ -1,8 +1,8 @@
+import Banner from "../../components/Banner"
+import imgAbout from '../../assets/img/Mountains.jpg'
 function About(){
     return<>
-    <div>
-        <h1>A propos</h1>
-    </div>
+        <Banner source={imgAbout}/>
     </>
     
 }
