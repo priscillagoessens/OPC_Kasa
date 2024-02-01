@@ -4,7 +4,7 @@ function CardSection() {
     return (
       <div className='cards-section'>
         <div className='cards-section_container'>
-            <Cards/>
+            <Cards />
         </div>
       </div>
     )

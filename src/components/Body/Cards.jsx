@@ -6,7 +6,7 @@ function Cards() {
 		<ul className='cards-container'>
 			{items.map((item) => (
 				<li key={item.id} className='cards-container_item'>
-					<img className='cards-container_item_img' src={item.cover} alt="" />
+					<img className='cards-container_item_img' src={item.cover} alt={item.title} />
 					<span className='cards-container_item_title'>{item.title}</span>
 				</li>
 			))}
