@@ -1,16 +1,11 @@
-import items  from '../../datas/logements.json'
 import './_Cards.scss'
 
-function Cards() {
+function Cards({cover,title,id}) {
 	return (
-		<ul className='cards-container'>
-			{items.map((item) => (
-				<li key={item.id} className='cards-container_item'>
-					<img className='cards-container_item_img' src={item.cover} alt={item.title} />
-					<span className='cards-container_item_title'>{item.title}</span>
-				</li>
-			))}
-		</ul>	
+		<li key={id} className='cards-container_item'>
+			<img className='cards-container_item_img' src={cover} alt={title} />
+			<span className='cards-container_item_title'>{title}</span>
+		</li>
 	)
 }
 

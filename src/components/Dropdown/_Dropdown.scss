@@ -2,15 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 30px;
     &_container{
         display: flex;
         flex-direction: column;
-        width: 25%;
-        h2{
+        width: 100%;
+        &_title{
+            display: flex;
+            justify-content: space-between;
             background: #FF6060;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
+            border-radius: 5px;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        img{
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
     }
 }

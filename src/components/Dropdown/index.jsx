@@ -1,26 +1,29 @@
 import React from 'react'
-import datas from '../../datas/dropdowns.json';
+import { useState } from 'react';
+import Arrow from '../../assets/picto/Arrow.svg'
+
 import './_Dropdown.scss'
 
 function Dropdown({title, description}){
+    const [toggle, setToggle] = useState(false)
+
+    const handleToggle =(e) =>{
+        setToggle(!toggle)
+    }
     return(
-        <div className="dropdown-section">
-            {datas.map((data)=>
-            <div className='dropdown-section_container'>
-            <div className='dropdown-section_container_title'>
-                <h2>{data.title}</h2>
+        <div className='dropdown-section_container'>
+            <div className='dropdown-section_container_title' >
+                <span>{title}</span>
+                <img src={Arrow} alt="" onClick={handleToggle}/>
             </div>
-            <div className='dropdown-section_container_description'>
-                <p>{data.content}</p>
-            </div>
-        </div>
-            )}
-            
+            {toggle &&
+                <div className='dropdown-section_container_description'>
+                    <p>{description}</p>
+                </div>
+            } 
         </div>
     )
-
 }
 
 export default Dropdown;
-//deux etats ouvert et fermé
-// animation au clique de la fleche
+
