@@ -7,6 +7,7 @@ import About from './pages/About'
 import Header from './components/Header/Header'
 import Error from './components/Error'
 import Footer from './components/Footer/Footer'
+import Logements from './pages/Logements';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -18,7 +19,8 @@ root.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="*" element={<Error/>}/>
+                <Route path="/logements/:id" element={<Logements />} />
+               <Route path="/*" element={<Error/>}/> 
             </Routes>
             <Footer/>
           </Router>

@@ -8,8 +8,8 @@ function Header() {
       <div className='header-container_elements'>
         <img className='header-container_elements-img' src={logo} alt="Kasa-logo" />
         <nav className='header-container_elements_nav'>
-          <NavLink className='header-container_elements_nav-link' activeClassName='active' to="/">Accueil</NavLink>
-          <NavLink className='header-container_elements_nav-link' activeClassName='active' to="/about">A propos</NavLink>
+          <NavLink className='header-container_elements_nav-link' to="/">Accueil</NavLink>
+          <NavLink className='header-container_elements_nav-link' to="/about">A propos</NavLink>
         </nav>
       </div>
     </div>

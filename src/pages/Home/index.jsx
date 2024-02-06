@@ -3,7 +3,6 @@ import CardSection from "../../components/Body/CardSection"
 import imgHome from '../../assets/img/Beach.jpg'
 import './_Home.scss'
 
-
 function Home() {
   const homeTitle = "Chez vous, partout et ailleurs"
   return (

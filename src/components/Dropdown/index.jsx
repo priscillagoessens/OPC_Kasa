@@ -14,7 +14,7 @@ function Dropdown({title, description}){
         <div className='dropdown-section_container'>
             <div className='dropdown-section_container_title' >
                 <span>{title}</span>
-                <img src={Arrow} alt="" onClick={handleToggle}/>
+                <img src={Arrow} alt="arrow" className={toggle ? 'rotate' : ''}  onClick={handleToggle}/>
             </div>
             {toggle &&
                 <div className='dropdown-section_container_description'>
