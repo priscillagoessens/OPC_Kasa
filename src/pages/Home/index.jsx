@@ -1,7 +1,6 @@
-import Banner from "../../components/Banner"
-import CardSection from "../../components/Body/CardSection"
+import Banner from "../../components/Banner/Banner"
+import CardSection from "../../components/Cards/CardSection"
 import imgHome from '../../assets/img/Beach.jpg'
-import './_Home.scss'
 
 function Home() {
   const homeTitle = "Chez vous, partout et ailleurs"

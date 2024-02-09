@@ -1,11 +1,11 @@
 import {React, StrictMode} from 'react'
-import './index.scss'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import {createRoot} from 'react-dom/client';
+import './styles/index.scss'
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './components/Header/Header'
-import Error from './components/Error'
+import Error from './components/Error/Error'
 import Footer from './components/Footer/Footer'
 import Logements from './pages/Logements';
 

@@ -1,6 +1,5 @@
 import logo from '../../assets/picto/Logo-red.svg'
 import { NavLink } from 'react-router-dom'
-import './_header.scss'
 
 function Header() {
   return (

@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom'
 import items  from '../../datas/logements.json'
 
 function Logements() {
-    const {id} = useParams()
-    const itemImg = items.find(item => item.id === id)
+    const {id} = useParams() //useParams je recupere le parametre de l'url 
+    const item = items.find(item => item.id === id) //cherche l'id correspondant a l'id extrait 
     return ( 
-        <div>
-            <Carousel images={itemImg}/>
-            <Logement/>
+        <div className="housing-container">
+            <Carousel images={item.pictures} />
+            <Logement title={item.title} location={item.location} />
         </div>
     )
 }

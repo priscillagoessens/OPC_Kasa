@@ -1,8 +1,5 @@
-import React from 'react'
 import { useState } from 'react';
 import Arrow from '../../assets/picto/Arrow.svg'
-
-import './_Dropdown.scss'
 
 function Dropdown({title, description}){
     const [toggle, setToggle] = useState(false)

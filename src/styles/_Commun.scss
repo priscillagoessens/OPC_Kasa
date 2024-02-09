@@ -1,0 +1,12 @@
+@font-face { font-family: Montserrat; 
+    src: url('../../src/assets/fonts/Montserrat-Medium.ttf'); } 
+  @font-face { font-family: Montserrat-bold; 
+    src: url('../../src/assets/fonts/Montserrat-Bold.ttf'); } 
+  
+  body {
+    font-family: Montserrat;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+  }

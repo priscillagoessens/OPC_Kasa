@@ -1,7 +1,6 @@
-import './_footer.scss'
 import logo from '../../assets/picto/Logo-light.png'
 
-export default function Footer() {
+function Footer() {
   return (
     <div className='footer-container'>
       <div className='footer-container_elements'>
@@ -12,3 +11,5 @@ export default function Footer() {
     </div>
   )
 }
+
+export default Footer

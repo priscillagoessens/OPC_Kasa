@@ -1,0 +1,10 @@
+.housing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 100px;
+    @include mobile{
+        margin: 0 20px;
+    }
+}

@@ -10,9 +10,9 @@
         &_title{
             display: flex;
             justify-content: space-between;
-            background: #FF6060;
+            background: $primary-color;
             border-radius: 5px;
-            color: white;
+            color: $white-color;
             border-radius: 10px;
             padding: 10px;
         }

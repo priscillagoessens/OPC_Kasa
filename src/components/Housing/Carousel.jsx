@@ -1,26 +1,27 @@
-import React from 'react'
-import './_Carousel.scss'
 import { useState } from 'react';
 
 function Carousel({images}) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(images.pictures)
-  const previous=()=>{
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length -1 :  currentIndex -1;
-    setCurrentIndex(newIndex)
-  }
-  const next=()=>{
-    const isFinalSlide =  currentIndex === images.length -1;
-    const newIndex = isFinalSlide ? 0 : currentIndex +1
-    setCurrentIndex(newIndex)
-  }  
+
+  const previous = () => {
+    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex -1);
+  };
+
+  const next = () => {
+    setCurrentIndex(currentIndex ===  images.length - 1 ? 0 : currentIndex +1);
+  };  
 
   return (
     <div className='carousel'>
-      <div className='arrow-previous' onClick={previous}></div>
-      <img src={images.pictures} alt="" />
-      <div className='arrow-next'onClick={next}></div>
+      {images.length > 1 && <div className='arrow-previous' onClick={previous}></div>}
+      {images.map((image,index) => (
+        <img src={image} alt="" key={index} className={currentIndex === index ? "carousel_slide" : "carousel_slide carousel_slide-hidden"} />
+      ))}
+      {images.length > 1 && 
+        <span className='carousel_slide_number'>
+        {currentIndex + 1}/{images.length}
+      </span>}
+      {images.length > 1 && <div className='arrow-next' onClick={next}></div>}
     </div>
   )
 }

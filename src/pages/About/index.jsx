@@ -1,6 +1,6 @@
-import Banner from "../../components/Banner"
+import Banner from "../../components/Banner/Banner"
 import imgAbout from '../../assets/img/Mountains.jpg'
-import Dropdown from "../../components/Dropdown"
+import Dropdown from "../../components/Dropdown/Dropdown"
 import datas from '../../datas/dropdowns.json';
 
 function About(){

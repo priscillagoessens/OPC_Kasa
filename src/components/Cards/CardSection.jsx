@@ -1,5 +1,4 @@
 import Cards from "./Cards"
-import './_CardSection.scss'
 import items  from '../../datas/logements.json'
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,7 @@ function CardSection() {
           {items.map((item) => (
             <Link to={`/logements/${item.id}`} key={item.id}>
               <Cards cover={item.cover} title={item.title} id={item.id}/>
-              </Link>
+            </Link>
             ))}
             </ul>	
         </div>
