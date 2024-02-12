@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Arrow from '../../assets/picto/Arrow.svg'
 
-function Dropdown({title, description}){
+function Dropdown({title, description, equipements}){
     const [toggle, setToggle] = useState(false)
 
     const handleToggle =(e) =>{
@@ -16,6 +16,9 @@ function Dropdown({title, description}){
             {toggle &&
                 <div className='dropdown-section_container_description'>
                     <p>{description}</p>
+                    <ul>
+                        <li>{equipements}</li>
+                    </ul>
                 </div>
             } 
         </div>

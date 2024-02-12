@@ -9,7 +9,14 @@ function Logements() {
     return ( 
         <div className="housing-container">
             <Carousel images={item.pictures} />
-            <Logement title={item.title} location={item.location} />
+            <Logement title={item.title} 
+                        location={item.location}
+                        tags={item.tags} 
+                        name={item.host.name}
+                        picture={item.host.picture}
+                        rating={item.rating}
+                        description={item.description}
+                        equipements={item.equipments}/>
         </div>
     )
 }

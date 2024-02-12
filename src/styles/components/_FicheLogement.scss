@@ -1,0 +1,52 @@
+.section-location{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    &_title{
+        font-weight: 500;
+        h2{
+            color: $primary-color;
+            font-size: 18px;       
+        }
+        h3{
+            font-size: 14px;
+            margin: unset;
+        }
+    }
+    &_tags{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        &-button{
+            background-color: $primary-color;
+            color: $white-color;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 15px;
+            font-size: 10px;
+        }
+    }
+    &_container-host{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &-presentation{
+            display: flex;
+            align-items: center;
+            gap: 10.5px;
+            span{
+                color: $primary-color;
+                font-size: 12px;
+            }
+            img{
+                border-radius: 50%;
+                height: 32px;
+            }
+        }
+    }
+}
+
