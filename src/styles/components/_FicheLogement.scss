@@ -3,50 +3,101 @@
     flex-direction: column;
     gap:20px;
     width: 100%;
-    &_title{
-        font-weight: 500;
-        h2{
-            color: $primary-color;
-            font-size: 18px;       
-        }
-        h3{
-            font-size: 14px;
-            margin: unset;
-        }
-    }
-    &_tags{
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        &-button{
-            background-color: $primary-color;
-            color: $white-color;
-            border: none;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px 15px;
-            font-size: 10px;
-        }
-    }
-    &_container-host{
+    &_container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        &-presentation{
+        @include mobile {
             display: flex;
-            align-items: center;
-            gap: 10.5px;
-            span{
-                color: $primary-color;
-                font-size: 12px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: unset;
+        }
+        &_info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &_title{
+                font-weight: 500;
+                h2{
+                    color: $primary-color;
+                    font-size: 36px; 
+                    @include mobile{
+                        font-size: 18px; 
+                    }      
+                }
+                h3{
+                    font-size: 18px;
+                    margin: unset;
+                    @include mobile{
+                        font-size: 14px; 
+                    } 
+                }
             }
-            img{
-                border-radius: 50%;
-                height: 32px;
+            &_tags{
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                @include mobile{
+                    flex-wrap: unset;
+                }
+                &-button{
+                    background-color: $primary-color;
+                    color: $white-color;
+                    border: none;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px 15px;
+                    font-size: 14px;
+                    @include mobile{
+                        font-size: 10px; 
+                    } 
+                }
             }
+        }
+        &_host{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: end;
+            justify-content: right;
+            gap: 20px;
+            @include mobile{
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+            }
+            &-presentation{
+                display: flex;
+                align-items: center;
+                gap: 10.5px;
+                span{
+                    color: $primary-color;
+                    font-size: 18px;
+                    width: min-content;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+                img{
+                    border-radius: 50%;
+                    height: 64px;
+                    @include mobile {
+                        height: 32px;
+                    }   
+                }
+            }
+        }
+    }
+    &_container-dropdown{
+        display: flex;
+        flex-direction: row;
+        gap: 76px;
+        @include mobile{
+            flex-direction: column;
+            gap: 20px;
         }
     }
 }

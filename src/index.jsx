@@ -1,5 +1,5 @@
 import {React, StrictMode} from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import {createRoot} from 'react-dom/client';
 import './styles/index.scss'
 import Home from './pages/Home'
@@ -20,7 +20,8 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logements/:id" element={<Logements />} />
-               <Route path="/*" element={<Error/>}/> 
+                <Route path="/error" element={<Error/>}/> 
+                <Route path="*" element={<Navigate replace to="/error" />} />
             </Routes>
             <Footer/>
           </Router>

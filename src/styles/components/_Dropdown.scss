@@ -3,10 +3,16 @@
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
+    @include mobile{
+        row-gap: 20px;
+    }
     &_container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 85%;
+        @include mobile{
+            width:100%;
+        }
         &_title{
             display: flex;
             justify-content: space-between;
@@ -30,7 +36,7 @@
         }
         &_description{
             background-color: $secondary-color;
-            padding: 15px;
+            padding: 0 15px;
             text-align: start;
             ul{
                 padding: unset;

@@ -20,10 +20,13 @@ function Carousel({images}) {
         <img src={image} alt="" key={index} className={currentIndex === index ? "carousel_slide" : "carousel_slide carousel_slide-hidden"} />
       ))}
       {images.length > 1 && 
-        <span className='carousel_slide_number'>
-           {currentIndex + 1}/{images.length} 
-        </span>}
-      {images.length > 1 && <div className='arrow-next' onClick={next}></div>}
+        <>
+          <span className='carousel_slide_number'>
+              {currentIndex + 1}/{images.length} 
+          </span>
+          <div className='arrow-next' onClick={next}></div>
+        </> 
+     }
     </div>
   )
 }

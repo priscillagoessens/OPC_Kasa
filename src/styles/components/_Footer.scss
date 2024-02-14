@@ -13,6 +13,11 @@
         &_text-color{
             color:$white-color;
             margin: unset;
+            @include mobile{
+                width: 133px;
+                font-size:12px;
+                text-align: center;
+            }
         }
     }
 }
