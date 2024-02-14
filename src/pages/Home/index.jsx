@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner/Banner"
-import CardSection from "../../components/Cards/CardSection"
+import Gallery from "../../components/Gallery/Gallery"
 import imgHome from '../../assets/img/Beach.jpg'
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="main-section">
         <Banner source={imgHome} title={homeTitle}/>
-        <CardSection/>
+        <Gallery/>
     </div>
   )
 }

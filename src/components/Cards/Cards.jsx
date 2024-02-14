@@ -1,4 +1,4 @@
-function Cards({cover,title}) { //props:{cover, title}
+function Cards({cover,title}) { //equivalent a props:{cover, title}
 	return (
 		<li  className='cards-container_item'>
 			<img className='cards-container_item_img' src={cover} alt={title} />

@@ -1,7 +1,7 @@
 import Rating from "../Rating"
 import Dropdown from "../Dropdown/Dropdown"
 
-function Logement({title, location,tags,name,picture,rating, description,equipements}){
+function Logement({title, location, tags, name, picture, rating, description, equipements}){
     return ( 
         <div className="section-location">
             <div className="section-location_title">
@@ -9,8 +9,8 @@ function Logement({title, location,tags,name,picture,rating, description,equipem
                 <h3>{location}</h3>
             </div>
             <div className="section-location_tags">
-                {tags.map((tag) => (
-                    <div className="section-location_tags-button">{tag}</div>
+                {tags.map((tag, title) => (
+                    <div key={title} className="section-location_tags-button">{tag}</div>
                 ))}
             </div>
             

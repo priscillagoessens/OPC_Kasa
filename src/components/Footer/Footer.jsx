@@ -7,7 +7,6 @@ function Footer() {
         <img src={logo} alt="" />
         <p className='footer-container_elements_text-color'>© 2020 Kasa. All rights reserved</p>
       </div>
-      
     </div>
   )
 }
