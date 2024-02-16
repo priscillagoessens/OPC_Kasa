@@ -38,6 +38,9 @@
             background-color: $secondary-color;
             padding: 0 15px;
             text-align: start;
+            @include mobile {
+                font-size: 12px;
+            }
             ul{
                 padding: unset;
                 li{

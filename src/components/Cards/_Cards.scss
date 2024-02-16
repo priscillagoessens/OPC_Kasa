@@ -10,6 +10,11 @@
         row-gap: 20px;
         margin: 0;
     }
+    &-link{
+        @include mobile{
+            width: 100%;
+        }
+    }
     &_item{
         display: flex;
         position: relative;

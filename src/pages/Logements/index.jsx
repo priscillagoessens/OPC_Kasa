@@ -1,5 +1,5 @@
-import Logement from "../../components/Housing/FicheLogement"
-import Carousel from "../../components/Housing/Carousel"
+import Logement from "../../components/FicheLogement/FicheLogement"
+import Carousel from "../../components/Carousel/Carousel"
 import { useParams, Navigate} from 'react-router-dom'
 import items  from '../../datas/logements.json'
 

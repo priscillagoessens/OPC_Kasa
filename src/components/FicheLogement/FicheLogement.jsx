@@ -31,7 +31,6 @@ function Logement({title, location, tags, name, picture, rating, description, eq
                 <Dropdown description={description} title="Description"/>
                 <Dropdown equipements={equipements} title="Equipements"/>
             </div>
-            
         </div>
     )
 }

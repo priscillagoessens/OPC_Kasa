@@ -1,16 +1,15 @@
 @import "./utils/Breakpoint";
 @import "./utils/Variables";
 @import "./Commun";
-@import "./components/Header";
-@import "./components/Footer";
-@import "./components/Banner";
-@import "./components/Gallery";
-@import "./components/Cards";
-@import "./components/Dropdown";
-@import "./components/Carousel";
-@import "./components/Error";
-@import "./components/FicheLogement";
-@import "./components/Rating";
+@import "../components/Header/Header";
+@import "../components/Footer/Footer";
+@import "../components/Banner/Banner";
+@import "../components/Gallery/Gallery";
+@import "../components/Cards/Cards";
+@import "../components/Dropdown/Dropdown";
+@import "../components/Carousel/Carousel";
+@import "../components/Error/Error";
+@import "../components/FicheLogement/FicheLogement";
+@import "../components/Rating/Rating";
 @import "./pages/Home";
 @import "./pages/Logements";
-

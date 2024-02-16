@@ -8,7 +8,7 @@ function Gallery() {
         <div className='cards-section_container'>
           <ul className='cards-container'>
             {items.map((item) => (
-              <Link to={`/logements/${item.id}`} key={item.id}>
+              <Link to={`/logements/${item.id}`} key={item.id} className="cards-container-link">
                 <Cards cover={item.cover} title={item.title} id={item.id}/>
               </Link>
             ))}

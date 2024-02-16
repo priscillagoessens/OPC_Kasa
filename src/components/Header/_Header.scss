@@ -26,6 +26,9 @@
             &-link{
                 color:$black-color;
                 text-decoration: none;
+                @include mobile{
+                    font-size: 12px;
+                }
                 &.active{
                     text-decoration: underline;
                 }

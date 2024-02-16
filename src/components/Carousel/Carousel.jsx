@@ -26,7 +26,7 @@ function Carousel({images}) {
           </span>
           <div className='arrow-next' onClick={next}></div>
         </> 
-     }
+      }
     </div>
   )
 }

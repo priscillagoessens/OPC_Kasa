@@ -2,7 +2,7 @@ import redStar from "../../assets/picto/StarFull.svg";
 import greyStar from "../../assets/picto/StarEmpty.svg";
 
 function Rating({rating}){
-    const stars = [1, 2, 3, 4, 5]; //creer un tableau de 5 etoiles
+    const stars = [1, 2, 3, 4, 5]; //creer un tableau de 5 etoiles voir array.fill
     return(
         <div className="rate-container">
           {/* on genere une img pour chaque element du tableau 
