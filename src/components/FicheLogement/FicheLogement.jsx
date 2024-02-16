@@ -1,4 +1,4 @@
-import Rating from "../Rating"
+import Rate from "../Rate/Rate"
 import Dropdown from "../Dropdown/Dropdown"
 
 function Logement({title, location, tags, name, picture, rating, description, equipements}){
@@ -19,10 +19,10 @@ function Logement({title, location, tags, name, picture, rating, description, eq
                 
                 
                 <div className="section-location_container_host">
-                    <Rating rating={rating}/>
+                    <Rate rating={rating}/>
                     <div className="section-location_container_host-presentation">
                         <span>{name}</span>
-                        <img src={picture} alt="" /> 
+                        <img src={picture} alt={name} /> 
                     </div>  
                 </div>
             </div>

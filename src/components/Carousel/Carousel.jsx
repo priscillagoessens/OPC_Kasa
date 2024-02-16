@@ -17,7 +17,7 @@ function Carousel({images}) {
       {images.length > 1 && <div className='arrow-previous' onClick={previous}></div>}
       {/* si l'index est egale au currentIndex alors on applique la classe carousel_slide sinon la classe hidden */}
       {images.map((image,index) => (
-        <img src={image} alt="" key={index} className={currentIndex === index ? "carousel_slide" : "carousel_slide carousel_slide-hidden"} />
+        <img src={image} alt="Logement" key={index} className={currentIndex === index ? "carousel_slide" : "carousel_slide carousel_slide-hidden"} />
       ))}
       {images.length > 1 && 
         <>
